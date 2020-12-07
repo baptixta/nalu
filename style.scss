@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+// Variables
+$background-color: #1d0b1c;
+$violet: #801336;
+$red: #c72c41;
+$soft-red: #ee4540;
+
+body {
+    align-items: center;
+    background-color: $red;
+    display: flex;
+    font-family: 'Amatic SC', cursive;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: $background-color;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    color: $red;
+    max-width: 600px;
+    padding: 2rem 2rem .6rem;
+    position: relative;
+}
+
+details {
+    font-size: 1.8rem;
+}
+
+h2 {
+    margin-top: 5rem;
+    position: relative;
+
+    &:before {
+        background: $red;
+        content: '';
+        height: 1px;
+        position: absolute;
+        top: -1.3rem;
+        width: 100%;
+    }
+}
